@@ -13,6 +13,7 @@ import numpy as np
 #Series 为一列（一个特征） 多列则叫DataFrame
 ss = Series(data = list("ABCD"),index=list("1234"),name="tezhengA",dtype=np.str) #dtype默认为np.object np.str也会显示成object的
 print(ss)
+#123
 
 #多个Series组成DataFrame
 # np.array([]) np.arange
