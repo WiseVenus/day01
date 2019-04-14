@@ -16,7 +16,7 @@ class UrlParser(object):
     def __get_img(self,baseUrl:str,soup:BeautifulSoup):
         '解析出img'
         for img in soup.find_all("img"):
-            href = a.get("src")
+            href = img.get("src")
             target_url = urljoin(baseUrl,href)
             self.url.add( target_url)
         pass
