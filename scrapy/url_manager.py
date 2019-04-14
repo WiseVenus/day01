@@ -1,4 +1,4 @@
-class Url_Manager(object):
+class UrlManager(object):
     'URL管理器 主要是两个集合 一个已爬 一个待爬'
     def __init__(self):
         self.new_url = set()
@@ -27,10 +27,13 @@ class Url_Manager(object):
 
 if __name__ == "__main__":
     '这里写模块的单元测试'
-    um = Url_Manager()
+    um = UrlManager()
     urls = ["http://www.baidu.com"]
     um.add_urls(urls)
     print(um.new_url,um.old_url)
     um.get_url()
     print(um.new_url,um.old_url)
     print(um.has_url())
+
+
+
